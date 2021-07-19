@@ -1,0 +1,111 @@
+body{ 
+    height:100vh; 
+    margin:0; 
+}
+.header{
+    background-color: #008CBA;
+}
+
+.header h2{
+    text-align: center;
+    color: whitesmoke;
+    margin :10px;
+    border: none;
+}
+
+.footer{
+    text-align: right;
+    color: whitesmoke;
+    padding: 5px;
+    background-color: #008CBA;
+    clear: both;
+    position: relative;
+    margin-top: auto;
+}
+
+body{ 
+    display:flex; 
+    flex-direction:column; 
+}
+.container{
+    display: flex;
+}
+#taskList,#todoList ,#completedList{
+    height: 500px;
+    width: 35%;
+    border: 1px;
+    margin: 5px 10px;
+    text-align: center;
+    border-color: #008CBA;
+    border-style: solid;
+    color: cornflowerblue;
+}
+
+#taskList div, #todoList div, #completedList div{
+    border: 1px;
+    margin: 5px 10px;
+    text-align: left;
+    border-color: blue;
+    border-style: solid;
+    color: black;
+    cursor: move;
+}
+
+.task.dragging {
+    border: 3px dotted rgb(238, 33, 33);
+    opacity: 0.5;
+}
+
+.button{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius :15px;
+    margin: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    width: 150px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h2>To do List</h2>
+    </div>
+    <input class="button" type="button" value="Add" onclick="addEditTask()">
+    <div class="container">
+        <div id="taskList" class="listContainer">
+                <h3>New</h3>
+                <div draggable="true" class="task">task 1</div>
+                <div draggable="true" class="task">task 2</div>
+                <div draggable="true" class="task">task 3</div>
+        </div>
+        <div id="todoList" class="listContainer">
+                <h3>To do</h3>
+                <div draggable="true" class="task">task 4</div>
+        </div>
+        <div id="completedList" class="listContainer">
+                <h3>Completed</h3>
+                <div draggable="true" class="task">task 5</div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <h2>Add New</h2>
+        <span class="close">&times;</span>
+        <input type="text" name="taskContent" id="taskContent">
+        <input type="button" value="->" onclick="addTask()">
+        </div>
+    </div>
+    <div class="footer">
+        copyright@2021
+    </div>
+</body>
+</html>
